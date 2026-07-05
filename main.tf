@@ -11,7 +11,6 @@ terraform {
     endpoint = "https://storage.yandexcloud.net"
     bucket   = "s5631315-terraform"
     region   = "ru-central1-a"
-    key      = "state/${terraform.workspace}/terraform.tfstate"
 
     skip_region_validation      = true
     skip_credentials_validation = true
