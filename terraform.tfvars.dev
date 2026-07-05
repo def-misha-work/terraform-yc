@@ -1,0 +1,25 @@
+# General
+zone = "ru-central1-a"
+environment = "dev"
+
+# For VM
+name        = "terraform-homework"
+name_prefix = "s5631315"
+vm_specification = {
+  api = {
+    cores     = 2
+    memory    = 2
+    disk_size = 20
+    boot_disk = "fd845dr9j4h2aaq1m6ko"
+  },
+  web = {
+    cores     = 2
+    memory    = 2
+    disk_size = 20
+    boot_disk = "fd845dr9j4h2aaq1m6ko"
+  }
+}
+
+# For data
+extra_disk_size  = 50
+extra_disk_names = ["logs", "backup"]
